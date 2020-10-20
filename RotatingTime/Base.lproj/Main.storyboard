@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rotating Time View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RotatingTimeViewController" customModule="RotatingTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-IC-skL">
+                                <rect key="frame" x="0.0" y="866" width="414" height="250"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="EhU-PA-7n2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBu-YK-lBU">
+                                <rect key="frame" x="132" y="378" width="150" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsh-Fd-eUr">
+                                        <rect key="frame" x="75" y="75" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Qsh-Fd-eUr" firstAttribute="centerX" secondItem="uBu-YK-lBU" secondAttribute="centerX" id="9ke-2L-29d"/>
+                                    <constraint firstAttribute="width" secondItem="uBu-YK-lBU" secondAttribute="height" multiplier="1:1" id="Xz0-R2-3QJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="hPa-Jx-RHP"/>
+                                    <constraint firstItem="Qsh-Fd-eUr" firstAttribute="centerY" secondItem="uBu-YK-lBU" secondAttribute="centerY" id="rkc-ky-2e5"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6rD-O6-e60" appends="YES" id="YRj-9u-LVI"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E9h-IC-skL" secondAttribute="bottom" constant="-220" id="13b-GJ-t6R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E9h-IC-skL" secondAttribute="trailing" id="AK2-22-dKR"/>
+                            <constraint firstItem="E9h-IC-skL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CEJ-Nk-XIK"/>
+                            <constraint firstItem="uBu-YK-lBU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="h6Y-d6-i1j"/>
+                            <constraint firstItem="uBu-YK-lBU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uRl-FX-Y0e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="E9h-IC-skL" id="4D0-3U-kJ1"/>
+                        <outlet property="bottomViewBottomConstraint" destination="13b-GJ-t6R" id="B4s-4O-i5M"/>
+                        <outlet property="squareView" destination="uBu-YK-lBU" id="7dv-Rb-uHJ"/>
+                        <outlet property="squareViewCenterXConstraint" destination="uRl-FX-Y0e" id="HXS-GP-CDl"/>
+                        <outlet property="squareViewCenterYConstraint" destination="h6Y-d6-i1j" id="0Fy-JW-Yl1"/>
+                        <outlet property="timeLabel" destination="Qsh-Fd-eUr" id="uj9-F1-Xn8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6rD-O6-e60">
+                    <connections>
+                        <action selector="squareViewPanned:" destination="BYZ-38-t0r" id="aPX-77-vHp"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A635D47253E04EC00268FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A635D46253E04EC00268FB6 /* AppDelegate.swift */; };
+		8A635D4B253E04EC00268FB6 /* RotatingTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A635D4A253E04EC00268FB6 /* RotatingTimeViewController.swift */; };
+		8A635D4E253E04EC00268FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A635D4C253E04EC00268FB6 /* Main.storyboard */; };
+		8A635D50253E04F000268FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A635D4F253E04F000268FB6 /* Assets.xcassets */; };
+		8A635D53253E04F000268FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A635D51253E04F000268FB6 /* LaunchScreen.storyboard */; };
+		8A635D5B253E1FC700268FB6 /* RotatingTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A635D5A253E1FC700268FB6 /* RotatingTimeViewModel.swift */; };
+		8A635D5E253E3B2F00268FB6 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A635D5D253E3B2F00268FB6 /* DateTime.swift */; };
+		8A635D61253E3B7300268FB6 /* DateTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A635D60253E3B7300268FB6 /* DateTimeService.swift */; };
+		8A635D63253E400A00268FB6 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A635D62253E400A00268FB6 /* NetworkLayer.swift */; };
+		8A635D66253E49E700268FB6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A635D65253E49E700268FB6 /* StringExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A635D43253E04EC00268FB6 /* RotatingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotatingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A635D46253E04EC00268FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A635D4A253E04EC00268FB6 /* RotatingTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingTimeViewController.swift; sourceTree = "<group>"; };
+		8A635D4D253E04EC00268FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A635D4F253E04F000268FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A635D52253E04F000268FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A635D54253E04F000268FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A635D5A253E1FC700268FB6 /* RotatingTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingTimeViewModel.swift; sourceTree = "<group>"; };
+		8A635D5D253E3B2F00268FB6 /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		8A635D60253E3B7300268FB6 /* DateTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeService.swift; sourceTree = "<group>"; };
+		8A635D62253E400A00268FB6 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		8A635D65253E49E700268FB6 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A635D40253E04EC00268FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A635D3A253E04EC00268FB6 = {
+			isa = PBXGroup;
+			children = (
+				8A635D45253E04EC00268FB6 /* RotatingTime */,
+				8A635D44253E04EC00268FB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A635D44253E04EC00268FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A635D43253E04EC00268FB6 /* RotatingTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A635D45253E04EC00268FB6 /* RotatingTime */ = {
+			isa = PBXGroup;
+			children = (
+				8A635D64253E49CE00268FB6 /* Extensions */,
+				8A635D5F253E3B6100268FB6 /* Services */,
+				8A635D5C253E3B1A00268FB6 /* Models */,
+				8A635D46253E04EC00268FB6 /* AppDelegate.swift */,
+				8A635D4A253E04EC00268FB6 /* RotatingTimeViewController.swift */,
+				8A635D5A253E1FC700268FB6 /* RotatingTimeViewModel.swift */,
+				8A635D4C253E04EC00268FB6 /* Main.storyboard */,
+				8A635D4F253E04F000268FB6 /* Assets.xcassets */,
+				8A635D51253E04F000268FB6 /* LaunchScreen.storyboard */,
+				8A635D54253E04F000268FB6 /* Info.plist */,
+			);
+			path = RotatingTime;
+			sourceTree = "<group>";
+		};
+		8A635D5C253E3B1A00268FB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A635D5D253E3B2F00268FB6 /* DateTime.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A635D5F253E3B6100268FB6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A635D60253E3B7300268FB6 /* DateTimeService.swift */,
+				8A635D62253E400A00268FB6 /* NetworkLayer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A635D64253E49CE00268FB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A635D65253E49E700268FB6 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A635D42253E04EC00268FB6 /* RotatingTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A635D57253E04F000268FB6 /* Build configuration list for PBXNativeTarget "RotatingTime" */;
+			buildPhases = (
+				8A635D3F253E04EC00268FB6 /* Sources */,
+				8A635D40253E04EC00268FB6 /* Frameworks */,
+				8A635D41253E04EC00268FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotatingTime;
+			productName = RotatingTime;
+			productReference = 8A635D43253E04EC00268FB6 /* RotatingTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A635D3B253E04EC00268FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = sahil;
+				TargetAttributes = {
+					8A635D42253E04EC00268FB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A635D3E253E04EC00268FB6 /* Build configuration list for PBXProject "RotatingTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A635D3A253E04EC00268FB6;
+			productRefGroup = 8A635D44253E04EC00268FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A635D42253E04EC00268FB6 /* RotatingTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A635D41253E04EC00268FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A635D53253E04F000268FB6 /* LaunchScreen.storyboard in Resources */,
+				8A635D50253E04F000268FB6 /* Assets.xcassets in Resources */,
+				8A635D4E253E04EC00268FB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A635D3F253E04EC00268FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A635D63253E400A00268FB6 /* NetworkLayer.swift in Sources */,
+				8A635D4B253E04EC00268FB6 /* RotatingTimeViewController.swift in Sources */,
+				8A635D5B253E1FC700268FB6 /* RotatingTimeViewModel.swift in Sources */,
+				8A635D66253E49E700268FB6 /* StringExtensions.swift in Sources */,
+				8A635D5E253E3B2F00268FB6 /* DateTime.swift in Sources */,
+				8A635D61253E3B7300268FB6 /* DateTimeService.swift in Sources */,
+				8A635D47253E04EC00268FB6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A635D4C253E04EC00268FB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A635D4D253E04EC00268FB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A635D51253E04F000268FB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A635D52253E04F000268FB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A635D55253E04F000268FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A635D56253E04F000268FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A635D58253E04F000268FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8XYPKVS8Y;
+				INFOPLIST_FILE = RotatingTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sahil.RotatingTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A635D59253E04F000268FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M8XYPKVS8Y;
+				INFOPLIST_FILE = RotatingTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sahil.RotatingTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A635D3E253E04EC00268FB6 /* Build configuration list for PBXProject "RotatingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A635D55253E04F000268FB6 /* Debug */,
+				8A635D56253E04F000268FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A635D57253E04F000268FB6 /* Build configuration list for PBXNativeTarget "RotatingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A635D58253E04F000268FB6 /* Debug */,
+				8A635D59253E04F000268FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A635D3B253E04EC00268FB6 /* Project object */;
+}
